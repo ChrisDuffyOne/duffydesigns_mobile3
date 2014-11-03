@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="main.css">
 	<script src="jquery.min.js"></script>
 	<script src="app.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500' rel='stylesheet' type='text/css'>-->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -34,7 +35,7 @@
 			<div class="intro">
 				<img src="images/mainTitle.png" alt="Duffy Designs" class="mainTitle">
 				<br />
-				<img src="images/mouseHole.png" id="mouseHole" alt="Duffy Designs" class="mouseHole">
+				<img src="images/mouseHoleMouse.png" id="mouseHole" alt="Duffy Designs" class="mouseHole">
 				<div class="blueBox"></div>
 			</div>
 		</a>
@@ -42,18 +43,10 @@
 		<div class="portfolio" id="portfolioWeb">
 			
 			<!-- Portfolio Header-->
+				
 			<img src="images/portfolioHeader.png" alt="Duffy Designs" class="portfolioHeader" id="portfolio">
-			<br />
-			
-			<!--
-			<div class="contentItem">
-				<a href="htmlPage_Jesters.html">
-						<img src="images/Port-Jesters-01.png" alt="Duffy Designs" class="contentImage">
-				</a>	
-				<span class="projectName">JESTER'S COMICS</span>
-				<span class="projectType">Web Development</span>
-			</div>
-			-->
+		
+			<!--Web Section-->
 
 			<div class="contentItem">
 				<a href="htmlPage_Zombies.html">
@@ -129,19 +122,37 @@
 		</div>
 		
 		<div class="aboutContact" id="aboutContact">
-			<img src="images/about.png" alt="contact" class="aboutType">
-			<br />
-			<img src="images/Chrismyfacephoto.jpg" alt="profile picture" class="profilePic">
 
-			<p class="info">Quiet by nature but loud on the paper. An avid reader, designer and illustrator I've found it's often easier to show rather than tell. I seek to bring fun, energetic elements to every project I work on. Words can't describe everything and shouting doesn't always get you heard but with clever design you needn't be loud to make noise.</p>
+			<div class="photoAndBio">
+				<div class="photo">
+					<!--About & Photo-->
+					<img src="images/about.png" alt="contact" class="aboutType">
+					<br />
+					<img src="images/Chrismyfacephoto.jpg" alt="profile picture" class="profilePic">
+				</div>
 
+				<div class="bio">
+					<!--Bio Paragraph-->
+					<p>Quiet by nature but loud on the paper. An avid reader, designer and illustrator I've found it's often easier to show rather than tell. I seek to bring fun, energetic elements to every project I work on. Words can't describe everything and shouting doesn't always get you heard but with clever design you needn't be loud to make noise.</p>
+				</div>
+
+				<div class="spacer" style="clear: both;"></div>
+			</div>
+
+			<!--Contact Section-->
 			<img src="images/contact.png" alt="contact" class="contactType" id="cellEmail">
 
-			<p class="info">609 470 4026 <br /> chrisduffyone@gmail.com </p>
+			<p class="contactInfo">609 470 4026</p><br />
+			<a href="mailto:chrisduffyone@gmail.com">
+				<p class="contactInfo">chrisduffyone@gmail.com</p>
+			</a>
+
+			<!--Mouse Section-->
 			<div class="mouseBoxLeft">
 				<img src="images/squeak.png" alt="Squeak!" class="squeakMouse">
 				<div class="blueBottom"></div>
-			</div>	
+			</div>
+
 		</div>
 	</div>
 </body>

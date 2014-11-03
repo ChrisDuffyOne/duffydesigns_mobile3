@@ -8,7 +8,7 @@ $(document).ready( function() {
     }
 
 	//Mouse Appearance & Disappearance
-
+	/* TEMP DISABLE
 	if($(window).width() > 1000) {
 		$(".intro").on("mouseenter", "#mouseHole", function () {
 			$('#mouseHole').attr('src','images/mouseHoleMouse.png');
@@ -17,6 +17,7 @@ $(document).ready( function() {
 			$('#mouseHole').attr('src','images/mouseHole.png');
 		});
 	}
+	*/
 
 	//Nav Bar Scrolling
 	
