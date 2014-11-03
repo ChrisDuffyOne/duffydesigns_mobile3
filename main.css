@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /////// MY CSS ///////  */
+/* /////// BASE /////// */
+
+.container{
+	width: 100%;
+	background-color: #F4D838;
+}
+
+/* /// Nav Div /// */
+
+.mouseNav{
+	display: none;
+}
+
+/* /// Intro Div /// */
+
+.intro{
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+.mainTitle{
+	max-width: 600px;
+	margin-top: 1.5em;
+}
+
+.mouseHole{
+	max-width: 200px;
+	margin-top: 3em;
+	margin-bottom: -5px;
+}
+
+.blueBox{
+	background-color: #37489E;
+	min-height: 120px;
+	margin-top: 0;
+}
+
+/* /// Portfolio Div /// */
+
+.portfolio{
+	background-color: #FEF9E4;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 6.250em;
+	padding-bottom: 2em;
+	min-height: 100px;
+	text-align: center;
+}
+
+.portfolioHeader{
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 450px;
+	margin-bottom: 30px;
+}
+
+.contentItem{
+	display: inline-block;
+	text-align: left;
+}
+
+.contentImage{
+	max-width: 100%;
+	margin-top: 1.5em;
+}
+
+.projectName{
+	display: block;
+	font-weight: bold;
+	color: #37489E;
+}
+
+.projectType{
+	display: block;
+	color: #37489E;
+}
+
+/* /// Portfolio Detail /// */
+/*This is an discontinued feature*/
+.portfolioDetail{
+	display: none;
+	position: fixed;
+	top: 35px;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: red;
+	min-height: 800px;
+}
+
+/* /// About/Contact Div /// */
+
+.aboutContact{
+	min-height: 100px;
+	text-align: center;
+}
+
+.aboutType, .contactType{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	max-width: 275px;
+}
+
+.profilePic{
+	margin-bottom: 2em;
+}
+
+.info{
+	color: #37489E; 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.mouseBoxLeft{
+	text-align: left;
+}
+
+.squeakMouse{
+	margin-left: 6em;
+	margin-top: 2em;
+	margin-bottom: -15px;
+}
+
+.blueBottom{
+	background-color: #37489E;
+	min-height: 50px;
+	margin-top: 0;
+}
+
+/* /////// 980 MOBILE WEBSITE /////// */
+@media only screen and (max-width: 980px) {
+
+	/* /// Portfolio Div /// */
+	.contentItem{
+		width: 90%;
+	}
+
+	.contentImage{
+		margin-top: 10.5em;
+	}
+
+	.projectName{
+		font-size: 3em;
+	}
+
+	.projectType{
+		font-size: 3em;
+	}
+
+	/* /// About/Contact Div /// */
+	
+	.profilePic{
+		min-width: 450px;
+	}
+
+	.info{
+		font-size: 1.75em;	
+	}
+
+	.squeakMouse{
+		max-height: 400px;
+	}
+}
+
+/* /////// 1000 WEBSITE /////// */
+@media only screen and (min-width: 1000px) {
+	
+	/* /// Nav Div /// */
+	.mouseNav{
+		display: initial;
+		background-color: #37489E;
+		position: fixed;
+	  	top: 0px;
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.navIcon{
+		max-width: 80px;
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+
+	.duffyDesigns{
+		max-width: 200px;
+		position: absolute;
+		right: 30px;
+	  	bottom: 0px;
+	}
+
+	/* /// Intro Div /// */
+	.mainTitle{
+		/*HERE*/
+		max-width: 300px;
+		max-height: 450px;
+
+		margin-top: 4.5em;
+	}
+
+	.mouseHole{
+		max-width: 100px;
+		max-height: 125px;
+	}
+
+	.blueBox{
+		min-height: 150px;
+	}
+
+	/* /// Portfolio Div /// */
+	.portfolioHeader{
+		display: none;
+	}
+
+	.contentItem{
+		/* HERE */
+		max-width: 400px;
+	}
+
+	.contentImage{
+		/* HERE */
+		max-width: 300px;
+		max-height: 450px;
+	}
+
+	/* /// About/Contact Div /// */
+
+	.profilePic{
+		/* HERE */
+		max-width: 300px;
+		max-height: 450px;
+	}
+
+	.squeakMouse{
+		/* HERE */
+		max-height: 200px;
+	}
+}
+
+/* /////// 1340 WEBSITE /////// */
+@media only screen and (min-width: 1340px) {
+
+	/* /// Nav Div /// */
+	.mouseNav{
+		display: initial;
+		background-color: #37489E;
+		position: fixed;
+	  	top: 0px;
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.navIcon{
+		max-width: 80px;
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+
+	.duffyDesigns{
+		max-width: 200px;
+		margin-left: 48%;
+		position: absolute;
+	  	bottom: 0px;
+	}
+
+	.mainTitle{
+		margin-top: 4.5em;
+	}
+
+	/* /// Intro Div /// */
+	.mouseHole{
+		margin-top: 1.5em;
+	}
+
+}

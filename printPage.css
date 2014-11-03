@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /////// MY CSS ///////  */
+/* /////// BASE /////// */
+
+.container{
+	width: 100%;
+	background-color: #FEF9E4;
+}
+
+/* /// Nav Div /// */
+
+.mouseNav{
+	display: initial;
+	background-color: #37489E;
+	position: fixed;
+  	top: 0px;
+	width: 100%;
+	min-height: 50px;
+}
+
+.navIcon{
+		max-width: 80px;
+		margin-left: 25px;
+		margin-top: 10px;
+}
+
+/* /// Intro Div /// */
+
+.intro{
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+.mainTitle{
+	max-width: 300px;
+	max-height: 450px;
+	margin-top: 1.5em;
+}
+
+.mouseHole{
+	max-width: 100px;
+	max-height: 125px;
+	margin-top: 3em;
+	margin-bottom: -5px;
+}
+
+.blueBox{
+	background-color: #37489E;
+	min-height: 20px;
+	margin-top: 0;
+}
+
+/* /// Portfolio Div /// */
+
+.portfolio{
+	background-color: #FEF9E4;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 6.250em;
+	padding-bottom: 2em;
+	min-height: 100px;
+	text-align: center;
+}
+
+.portfolioHeader{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 250px;
+		margin-bottom: 30px;
+	}
+
+.contentItem{
+	display: inline-block;
+	max-width: 400px;
+	text-align: left;
+}
+
+.projectName{
+	display: block;
+	font-weight: bold;
+	color: #37489E;
+}
+
+.projectExp{
+	display: block;
+	margin-top: 1.5em;
+ 	margin-right:15%;
+ 	margin-left:15%;
+	/*max-width: 800px;*/
+	color: #37489E;
+}
+
+.portContentImage{
+	display: block;
+	margin-top: 2em;
+ 	max-width: 350px;
+	margin-left:auto;
+ 	margin-right:auto;
+}
+
+.portWebContentImage{
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+ 	max-width: 350px;
+ 	margin-left:5%;
+ 	margin-right:5%;
+}
+
+.enterSite{
+	max-width: 125px;
+	margin-top: 4em;
+	margin-right: auto;
+	margin-bottom: 150px;
+	margin-left: auto;
+}
+
+/* /// Portfolio Detail /// */
+
+.portfolioDetail{
+	display: none;
+	position: fixed;
+	top: 35px;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	background-color: red;
+	min-height: 800px;
+
+}
+
+/* /// About/Contact Div /// */
+
+.aboutContact{
+	min-height: 100px;
+	text-align: center;
+}
+
+.aboutType, .contactType{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	max-width: 275px;
+}
+
+.profilePic{
+	max-width: 300px;
+	max-height: 450px;
+	margin-bottom: 2em;
+}
+
+.info{
+	color: #37489E; 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.mouseBoxLeft{
+	text-align: left;
+}
+
+.squeakMouse{
+	max-height: 200px;
+	margin-left: 6em;
+	margin-top: 2em;
+	margin-bottom: -15px;
+}
+
+.blueBottom{
+	background-color: #37489E;
+	min-height: 50px;
+	margin-top: 0;
+}
+
+/* /////// 980 MOBILE WEBSITE /////// */
+@media only screen and (max-width: 980px) {
+	.navIcon{
+		min-width: 200px;
+		margin-bottom: 10px;
+		margin-left: 35px;
+	}
+
+	.portWebContentImage{
+		min-width: 80%;
+	}
+
+	.projectName{
+		font-size: 2.65em;
+	}
+
+	.projectExp{
+		font-size: 1.75em;
+	}
+
+	.portContentImage{
+		min-width: 80%;
+	}
+
+	.enterSite{
+		min-width: 35%;
+	}
+}
+
+/* /////// 1000 WEBSITE /////// */
+@media only screen and (min-width: 1000px) {
+
+	.mouseNav{
+		display: initial;
+		background-color: #37489E;
+		position: fixed;
+	  	top: 0px;
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.navIcon{
+		max-width: 80px;
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+
+	.duffyDesigns{
+		max-width: 200px;
+		/*margin-left: 9%;*/
+		/*position: absolute;*/
+		float: right;
+	  	bottom: 0px;
+	}
+
+	.mainTitle{
+		margin-top: 4.5em;
+	}
+
+	.blueBox{
+		min-height: 150px;
+	}
+
+	.portfolioHeader{
+		display: none;
+	}
+
+	/* /// Portfolio Div /// */
+	.portContentImage{
+ 		max-width: 500px;
+ 	}	
+}
+
+/* /////// 1340 WEBSITE /////// */
+@media only screen and (min-width: 1340px) {
+
+	/* /// Nav Div /// */
+	.mouseNav{
+		display: initial;
+		background-color: #37489E;
+		position: fixed;
+	  	top: 0px;
+		width: 100%;
+		min-height: 50px;
+	}
+
+	.navIcon{
+		max-width: 80px;
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+
+	.duffyDesigns{
+		max-width: 200px;
+		margin-left: 48%;
+		position: absolute;
+	  	bottom: 0px;
+	}
+
+	.mainTitle{
+		margin-top: 4.5em;
+	}
+
+	/* /// Intro Div /// */
+	.mouseHole{
+		margin-top: 1.5em;
+	}
+
+	/* /// Portfolio Div /// */
+	.portContentImage{
+ 		max-width: 800px;
+ 	}	
+
+}
