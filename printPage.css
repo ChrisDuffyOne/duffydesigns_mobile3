@@ -125,16 +125,21 @@ table {
 
 .projectName{
 	display: block;
-	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 1.25em;
 	color: #37489E;
 }
 
 .projectExp{
 	display: block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
 	margin-top: 1.5em;
- 	margin-right:15%;
- 	margin-left:15%;
-	/*max-width: 800px;*/
+ 	margin-right:auto;
+ 	margin-left:auto;
+ 	line-height: 150%;
+	max-width: 700px;
 	color: #37489E;
 }
 

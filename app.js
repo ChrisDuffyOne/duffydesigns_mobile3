@@ -2,25 +2,21 @@ $(document).ready( function() {
 	console.log("javascript on");
 
 	//Mouse House Mobile Display
-
 	if($(window).width() <= 1000) {
          $('#mouseHole').attr('src','images/mouseHoleMouse.png');   
     }
 
 	//Mouse Appearance & Disappearance
-	/* TEMP DISABLE
 	if($(window).width() > 1000) {
 		$(".intro").on("mouseenter", "#mouseHole", function () {
-			$('#mouseHole').attr('src','images/mouseHoleMouse.png');
-		});
-		$(".intro").on("mouseleave", "#mouseHole", function () {
 			$('#mouseHole').attr('src','images/mouseHole.png');
 		});
+		$(".intro").on("mouseleave", "#mouseHole", function () {
+			$('#mouseHole').attr('src','images/mouseHoleMouse.png');
+		});
 	}
-	*/
 
 	//Nav Bar Scrolling
-	
 	$('a[href^="#"]').click(function() {
           var target = $(this.hash);
           if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
